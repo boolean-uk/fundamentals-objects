@@ -26,7 +26,7 @@ const mainInstrument = person.instruments[2]
 person.profession = {}
 
 // 8. Add a name property to the profession object with the value Musician
-person.profession.name = "Musician"
+person.profession.name = 'Musician'
 
 // 9. Add a friends property to the person, which is an empty array
 person.friends = []
