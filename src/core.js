@@ -21,7 +21,7 @@ person.instruments.push('Guitar', 'Piano', 'Vocals')
 const mainInstrument = person.instruments[2]
 
 // 7. Add a profession property to the person, which is an object
-person.profession = new Object()
+person.profession = {}
 
 // 8. Add a name property to the profession object with the value Musician
 person.profession.name = 'Musician'
