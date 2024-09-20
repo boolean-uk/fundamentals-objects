@@ -51,6 +51,28 @@ console.log(numberOfVoucherCodes)
 const firstVoucherCode = basket.voucherCodes[0]
 console.log(firstVoucherCode)
 
+// Delete the asin key
+delete book.isbn.asin
+
+// Price of apples should be updatet to 2
+basket.items[0].price = 2
+
+// Book ISBN 13 should be 978-0132350884
+book.isbn.isbn13 = '978-0132350884'
+
+// Book pages should be 464
+book.pages = 464
+
+// Book should not contain the dimensions key
+delete book.dimensions
+
+// 4 oranges priced at 0.75 should be added to the end of the items list
+basket.items.push({ name: 'Oranges', price: 0.75, quantity: 4 })
+console.log(basket.items)
+
+// Book category should be Programming
+book.category = 'Programming'
+
 // Do not edit this exported object
 module.exports = {
   name,
