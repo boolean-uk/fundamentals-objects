@@ -24,6 +24,21 @@ const name = book.name
 // 2. Set this to the isbn 10 value - using the book object
 const isbn10 = book.isbn.isbn10
 
+// Delete book dimension key
+delete book.dimensions
+
+// Book pages should be 464
+book.pages = 464
+
+// Book should not contain asin key
+delete book.isbn.asin
+
+// Book ISBN 13 should be 978-0132350884
+book.isbn.isbn13 = isbn13
+
+// Book category should be programming
+book.category = 'Programming'
+
 // Do not modify this basket object directly
 const basket = {
   items: [
@@ -46,6 +61,16 @@ const numberOfVoucherCodes = basket.voucherCodes.length
 
 // 4. Set this variable to the first element in of the baskets voucher codes array - using the basket object
 const firstVoucherCode = basket.voucherCodes[0]
+
+// 5. Set the price of apples to 2
+basket.items[0].price = 2
+
+// 6. Add 4 oranges with the price of 0.75 to the end of the items list
+basket.items.push({
+  name: 'Oranges', 
+  quantity: 4, 
+  price: 0.75
+})
 
 // Do not edit this exported object
 module.exports = {
